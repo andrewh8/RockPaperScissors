@@ -62,7 +62,7 @@
                         winner = "tie";
                     }
                 } else {
-                    alert("You must select Rock, Paper, or Scissors!")
+                    //alert("You must select Rock, Paper, or Scissors!")
                     return
                 }
 
@@ -78,10 +78,12 @@
             }
 
             function game() {
-                // initialize a counter
+                // initialize counters for the player and computer wins
+                // initialize a counter for the number of games
                 // get a selection from the user
                 // get a selection from the computer
                 // run the game
+
                 let p = 0;
                 let c = 0;
                 for (let i = 0; i < 5; i++) {
@@ -92,6 +94,7 @@
                     let x = typeof playRound(player, computer);
                     if (x === "undefined") {
                         i = i -1;
+                        alert("You must select Rock, Paper, or Scissors!")
                     } else if (playRound(player, computer).includes("Win")) {
                         p++;
                     } else if (playRound(player, computer).includes("Lose")) {
@@ -99,11 +102,11 @@
                     }
                 }
                 if (p > c) {
-                    console.log(`You Win! You won ${p} games!`);
+                    console.log(`You Win! You won ${p} games and the computer won ${c} games.`);
                 } else if (c > p) {
-                    console.log(`You Win! You won ${c} games!`);
+                    console.log(`You Lose! The computer won ${c} games and you won ${p} games.`);
                 } else if (p = c) {
-                    console.log("It's a Tie!");
+                    console.log(`It's a Tie! You both won ${p} games.`);
                 }
             }
         </script>
