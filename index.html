@@ -4,28 +4,34 @@
         <meta charset="utf-8">
         <link rel = "stylesheet" href = "rps.css">
         <title>Rock Paper Scissors</title>
-        <script src="rps.js"></script>
     </head>
     <body>
         <div class = "header">
             <div class = "title">Rock Paper Scissors</div>
-            <div class = "instructions">Make a selection for each game. Try to beat the computer - best of 5 games wins!</div>
+            <div class = "instructions">Play against the computer by making a selection for each game. The first to win 5 games is the winner!</div>
         </div>
         <div class = main>
             <div class = "selections">
                 <div class = "selectionTitle">Make a Selection</div>
-                <button class = "rock">Rock</button>
-                <button class = "paper">Paper</button>
-                <button class = "scissors">Scissors</button>
+                <button class = "button" id = "Rock">Rock</button>
+                <button class = "button" id = "Paper">Paper</button>
+                <button class = "button" id = "Scissors">Scissors</button>
             </div>
-            <div class = "score">
+            <div class = "score" id = "score">
                 <div class = "scoreTitle">Score</div>
                 <div class = "scoreCount">
-                    <div class = "you">You</div>
-                    <div class = "computer">Computer</div>
+                    <div class = "you">
+                        You
+                        <div id = "you"></div>
+                    </div>
+                    <div class = "computer">
+                        Computer
+                        <div id = "computer"></div>
+                    </div>
                 </div>
-                <div class = "scoreFinal"></div>
+                <div id = "scoreFinal" class = "scoreFinal"></div>
             </div>
         </div>
     </body>
+    <script src="rps.js"></script>
 </html>
