@@ -1,3 +1,5 @@
 # RockPaperScissors
 
-![image](https://user-images.githubusercontent.com/88868021/173180988-2fa89862-dc96-4900-98be-1bc393a1e6da.png)
+A game of Rock-Paper-Scissors played against the computer.
+
+![image](https://user-images.githubusercontent.com/88868021/173181034-cee96491-6b4a-4a97-82a6-182619b50c25.png)
